@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <marquee behavior="" direction="">Hi</marquee>
+    <h1>Bài 3</h1>
+    <!-- Danh sách (List) -->
+    <!-- Có thứ tự ol, li -->
+     <p>Danh sách các công việc vào buổi sáng</p>
+     <ol>
+        <li>Thức dậy</li>
+        <li>Đánh răng</li>
+        <li>Ăn sáng</li>
+        <li>Đi học</li>
+        <li>Giải lao</li>
+     </ol>
+     <!-- Không có thứ tự ul, li -->
+      <p>Các ngôn ngữ lập trình web</p>
+      <ul>
+        <li>Python</li>
+        <li>PHP</li>
+        <li>JavaScript</li>
+        <li>C#</li>
+      </ul>
+
+      <!-- Form -->
+      <h1>Form</h1>
+      <form>
+        <div>
+            <b>Họ và tên: </b>
+        <input type="text" name="hoten" placeholder="Nhập tên vào đây">
+        </div>
+        <br>
+        <div>
+            <b>Năm: </b>
+        <input type="text" name="nam" value="2025" readonly>
+        </div>
+        <br>
+        <div>
+            <b>Giới thiệu chi tiết về bản thân: </b>
+            <br>
+        <textarea name="gioithieu">Nhập giới thiệu...</textarea>
+        </div>
+        <br>
+        <div>
+            <b>Email: </b>
+        <input type="email" name="email" placeholder="Dạng @gmail.com">
+        </div>
+        <br>
+        <div>
+            <b>Số điện thoại: </b>
+        <input type="tel" name="sodienthoai" placeholder="+84" required pattern="([0]{1}([0,3,9]{1})([0-9]{8}))">
+        </div>
+        <br>
+        <div>
+            <b>Giới tính</b>
+            <br>
+            <input type="radio" name="gioitinh" value="nam"> Nam <br>
+            <input type="radio" name="gioitinh" value="nu"> Nữ <br>
+            <input type="radio" name="gioitinh" value="khongxacding"> Không xác định <br>
+        </div>
+        <div>
+        <b>Sở thích</b><br>
+        Game: <input type="checkbox" name="sothich" value="game"><br>
+        Music: <input type="checkbox" name="sothich" value="music"><br>
+        Sport: <input type="checkbox" name="sothich" value="sport"><br>
+        </div>
+        <br>
+        <div>
+            <b>Trình duyệt ưa thích</b> <br>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                
+            </datalist>
+            <br>
+            <select>
+                <option value="Internet Explorer">Internet Explorer
+                <option value="Firefox">Firefox
+                <option value="Chrome">Chrome
+                <option value="Opera">Opera
+            </select>
+        </div>
+        <br>
+        <div>
+            0 <input type="range" value="20">100
+        </div>
+        <div>
+            <b>Tuổi</b><br>
+            <input type="number" name="tuoi">
+        </div>
+        <br>
+        <div>
+            <b>Ngày tháng năm sinh</b>
+            <input type="date" name="ngaythangnamsinh">
+        </div>
+        <br>
+        <div>
+            <b>Màu sắc yêu thích</B>
+            <input type="color" name="" id="">
+        </div>
+        <br>
+        <div>
+            <b>Chọn ảnh đại diện</b>
+            <input type="file">
+        </div>
+        <br>
+        <div>
+            <b>Mật khẩu</b>
+            <input type="password">
+        </div>
+        <br>
+        <div>
+            <b>Reset</b>
+            <input type="reset">
+        </div>
+        <br>
+        <div>
+            <input type="Submit">
+        </div>
+        </div>
+      </form>
+
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/2Ima1LDF22c?si=nAF7yRO1MqXZ0_1P" 
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <video controls width="560" height="315">
+        <source src="1049-142623920.mp4" type="video/mp4">
+    </video>
+
+    <audio controls>
+        <source src="SpotiDownloader.com - Ngàn Năm Ánh Sáng - Đặng Vĩnh Thịnh.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>
