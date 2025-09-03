@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+}
+ul{
+    margin: 0;
+}
+.danhmuc{
+    background-color: #2fa4e7;
+    padding: 20px;
+}
+.danhmuc-danhsach{
+    /* danh mục cùng 1 dòng */
+    display: flex; 
+    list-style: none;
+}
+.danhmuc-lienket{
+    color: #ffffff;
+    /* bỏ gạch chân */
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+}
+.danhmuc-muc{
+    margin: 10px;
+}
+.danhmuc-lienket:hover{
+    color: #737272;
+}
+.logo {
+    height: 100px;
+    background-color: #737272;
+}
+main{
+    display: flex; 
+}
+.noidung-trai{
+    /* height: 1000px;
+    background-color: aqua; */
+    width: 80%;
+    border-radius: 10px;
+}
+.noidung-phai{
+    height: 1000px;
+    background-color: green;
+    width: 20%;
+} 
+.tieude{
+    background-color: rgb(0, 119, 246);
+    padding: 20px;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+     border-radius: 10px 10px 0px 0px;
+}
+.tintuc-danhsach {
+    display: flex;
+    justify-content: space-between;
+}
+.baiviet {
+    height: 200px;
+    background-color: #dd0000;
+    width: 32%;
+}
+.anh {
+    height: 200px;
+    width: 100%;
+}
