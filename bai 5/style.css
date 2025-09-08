@@ -27,8 +27,8 @@ ul{
     color: #737272;
 }
 .logo {
-    height: 100px;
-    background-color: #737272;
+    height: 50px;
+    width: 40%;
 }
 main{
     display: flex; 
@@ -62,6 +62,138 @@ main{
     width: 32%;
 }
 .anh {
-    height: 200px;
+    height: 100%;
     width: 100%;
+}
+.ngaygio {
+    position: absolute;
+    width: 25.5%;
+    background-color: rgba(0, 255, 255, 0.567);
+    
+}
+
+.baiviet img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.thongtin{
+    height: 40px;
+    background-color: rgba(0, 255, 255, 0.567);
+
+}
+.anhphai{
+    height: 40px;
+    width: 100%;
+
+}
+.footer{
+     height: 50px;
+    background-color: rgba(0, 255, 255, 0.567);
+    text-align: center;
+}   
+
+.thongtinanh{
+    position: absolute;
+    background-color: rgba(0, 255, 255, 0.567);
+}
+.box {
+  background: white;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.box h3 {
+  background: #1e90ff;
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+.news, .notice {
+  padding: 10px;
+}
+
+.news img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.notice ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.notice li {
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+}
+
+.notice li a {
+  text-decoration: none;
+  color: #1e90ff;
+}
+.login {
+ 
+  text-align: center;   /* chữ trong ô nhập căn giữa */
+}
+
+.login input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 5px;
+
+ 
+}
+
+.login button {
+  width: 100%;
+  padding: 10px;
+  background: #1e90ff;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login .btn-office {
+  background: #0078d7;
+  margin-top: 5px;
+}
+
+.noidung-phai {
+   background-color: rgb(255, 255, 255);
+    padding: 20px;
+    color: rgb(0, 55, 255);
+    font-size: medium;
+    font-weight: bold;
+}
+.huongdan{
+    text-decoration: none;
+    list-style: none;
+    margin: 20px;
+    padding: 12px 0;
+    line-height: 1.8;
+}
+.anh-thongbao{
+    width: 20%;
+  border-radius: 5px;
+}
+.thongbao{
+    display: flex;
+    color: #000;
+    font-size: larger;
+    list-style: none;
+    line-height: 1.8;
+}
+li{
+    list-style: none
+}
+.login .MSV{
+    width: 100%;
+    text-align: center;
 }
