@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let thongTinDonHang = {
+            maDonHang: "12345",
+                thongTinKhachHang: {
+                hoTen: "Mai Viết Nhật",
+                soDienThoai: "0123456789",
+                trangThai: true,
+            },
+            sanPham: {
+                sp1: {
+                    maSanPham: "1",
+                    tenSP: "Trà sữa",
+                    soLuong: "3",
+                    giaTien: "20000" 
+                },
+                sp2: {
+                    maSanPham: "1",
+                    tenSP: "matcha",
+                    soLuong: "5",
+                    giaTien: "20000" 
+                },
+                sp3: {
+                    maSanPham: "1",
+                    tenSP: "Cafe",
+                    soLuong: "4",
+                    giaTien: "15000" 
+                },
+            },
+            thanhToanThanhCong: true,
+            diaChiGiaoHang: "Đông Ngạc"
+        }
+        let tongSP1 = thongTinDonHang.sanPham.sp1.giaTien * thongTinDonHang.sanPham.sp1.soLuong;
+        let tongSP2 = thongTinDonHang.sanPham.sp2.giaTien * thongTinDonHang.sanPham.sp2.soLuong;
+        let tongSP3 = thongTinDonHang.sanPham.sp3.giaTien * thongTinDonHang.sanPham.sp3.soLuong;
+        let tongTien = tongSP1 + tongSP2 + tongSP3;
+
+        document.writeln("Độ dài mã đơn hàng: " + thongTinDonHang.maDonHang.length + "<br>");
+
+
+        var myString = "Hello"
+        document.writeln(myString[3] + "<br>");
+
+        var myString = "Hello"
+        document.writeln(myString.slice(1,4) + "<br>");
+
+        var myString = "Hello Nhat"
+        document.writeln(myString.replace("Hello", "Hi") + "<br>");
+
+        var myString = "Hello"
+        document.writeln(myString.toLocaleLowerCase() + "<br>");
+
+        //trả ra vị trí xuất hiện đầu tiên của kí hiệu, nếu ko có là - 
+        var myString = "Hello"
+        document.writeln(myString.indexOf('e') + "<br>");
+
+        //kí hiệu có xuaart hiện hay ko
+        var myString = "Hello"
+        document.writeln(myString.includes('e') + "<br>");
+
+        //Tách chuỗi thành mảng
+        var myString = "Hello"
+        document.writeln(myString.split('l') + "<br>");
+
+        let danhSach = ["Phạm Tiệp Anh", "Nguyễn Tiến Bách", "Lương Ngọc Bích", "Mai Viết Nhật"];
+        document.writeln(danhSach[1].startsWith("Nguyễn") + "<br>");
+
+        //Chuyển chuỗi về số
+        let so = "123";
+        document.writeln(typeof (so));
+        document.writeln(typeof (Number(so)) + "<br>");
+
+        document.writeln(typeof parseInt("10.5"));
+        document.writeln(typeof parseFloat("10.5") + "<br>");
+
+        var pi = 3.14159;
+        document.writeln(pi.toFixed(2) + "<br>");
+
+        document.writeln(isNaN(NaN) + "<br>");
+        document.writeln(isFinite(10) + "<br>");
+
+        //date
+        let today = new Date()
+        document.writeln(today);
+        // document.writeln(today - 1 );
+        
+        // Mảng
+        let arr = [1, 2, 3, 4, 5, 'a', 's','d', 5, 6];
+        document.writeln(arr.length + "<br>");
+        document.writeln(arr[3] + "<br>");
+            //thứ tự xuất hiện đầu tiên của phần tử
+        document.writeln(arr.indexOf('a') + "<br>");
+            //thứ tự xuất hiện cuối cùng của phần tử
+        document.writeln(arr.lastIndexOf(5) + "<br>");
+        // let a = "abc";
+        // document.writeln(Array.isArray(a));
+
+        //Nối chuỗi
+        let a, b, c, d;
+        a = [1, 2, 3];
+        b = "Java Script";
+        c = [42, "VBScript"];
+        d = a.concat(b, c);
+        // e = d.pop();
+        // document.writeln(d.join("-"));
+        // d.push("Kiên");
+        d[3] = 4;
+        document.writeln(d + "<br>");
+        document.writeln(d.reverse());
+        //Xóa phần tử cuối cùng
+        document.writeln(arr.pop());
+        //Xóa phần tử đầu tiên
+        document.writeln(arr.shift());
+        //Thêm phần tử vào đầu mảng
+        document.writeln(arr.unshift());
+
+
+        //IF - ELSE
+        // let today = new Date();
+        let now = today.getHours();
+        if (now < 10){
+            document.writeln("Chào buổi sáng");
+        } else if (now >= 10 && now < 12) {
+            document.writeln("Chào buổi trưa");
+        } else if (now >= 12 && now < 17) {
+            document.writeln("Chào buổi chiều");
+        } else if (now >= 17 && now < 22) {
+            document.writeln("Chào buổi tối");
+        } else {
+            document.writeln("Chào buổi đêm");
+        }
+
+
+        let number = "10000000000000001";
+        let soCuoiCung = parseInt(so[so.length - 1]);
+
+        if(soCuoiCung % 2 == 0){
+            document.writeln("Số chẵn");
+        } else {
+            document.writeln("Số lẻ");
+        }
+    </script>
+</body>
+</html>
