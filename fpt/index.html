@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FPT play</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -42,11 +43,29 @@
             <div>
                 <div style="display: flex; justify-content: center;">
                     <img class="banner" src="anh/640x396-muado.jpg" alt="">
+                   
                 </div>
+                 <div>
+                    <button onclick="hienThiVideo()" class="click">Xem ngay</button>
+                        <div id="khung-video" style="display:none;">
+                            <iframe width=100% height=700 src="https://youtu.be/BD6PoZJdt_M?si=tjdCpTUHamckicys" title="Video" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <script>
+                        function hienThiVideo() {
+                            var khung = document.getElementById("khung-video");
+                            if (khung.style.display === "none") {
+                                khung.style.display = "block";
+                            } else {
+                                khung.style.display = "none";
+                            }
+                        }
+                    </script>
+                    </div>
                 <div style="display: flex; justify-content: center;">
                     <img class="qc" src="anh/qc.jpg" alt="">
                 </div>
             </div>
+    
             <div class="theloai">
                 <div class="tentheloai">
                     Phim chiếu rạp
@@ -364,7 +383,7 @@
          <div class="danhmuc-footer">
             <br>
            <div class="menu2">
-            <a class="tieude-menu">Dịch vụ</a>
+            <a class="tieude-menu"> Dịch vụ </a>
             <br>
             <a class="menu" href="#">Gói DATA</a>
             <br>
